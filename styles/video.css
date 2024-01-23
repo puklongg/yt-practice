@@ -1,0 +1,116 @@
+
+  
+    .thumbnail{
+      width: 100%;
+      object-fit: contain;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .thumbnail:hover{
+      border-radius: 0;
+      transition: 0.3s;
+    }
+
+    .title{
+      margin-top: 0;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 15px;
+      margin-bottom: 8px;
+    }
+
+    .info{
+      margin-left: 12px;
+    }
+    .name, .stats{
+      font-size: 15px;
+      color: rgb(96, 96, 96);
+    }
+    .stats{
+      margin-top: 2px;
+    }
+
+
+    .thumbnail-row{
+      margin-bottom: 12px;
+      position: relative;
+    }
+
+    .profile-info{
+      display: grid;
+      grid-template-columns: 50px 1fr;
+    }
+    
+    .profile-pic{
+      width: 37px;
+      border-radius: 50px;
+      cursor: pointer; transition: 0.15s;
+    }
+    
+    .vid-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 16px;
+      row-gap: 63px;
+    }
+
+    @media (max-width: 750px) {
+      .vid-grid{
+        grid-template-columns: 1fr 1fr;
+      }
+
+
+    @media(min-width: 751px) and (max-width: 999px){
+      .vid-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    } 
+
+    }
+    @media (min-width: 1000px){
+      .vid-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+    }
+
+    .video-time{
+      background-color: rgb(36, 34, 34);
+      color: rgb(238, 234, 234);
+      position: absolute;
+      bottom: 8px;
+      right: 5px;
+      padding: 2px 4px 2px 4px;
+      border-radius: 4px;
+      font-size: smaller;font-family: Roboto; font-weight: 500;
+    } 
+
+    .profile-pic-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative; 
+  }
+    
+  .profile-pic-container .profile-tooltip{
+      position: absolute;
+      background-color: gray;
+      color: white;
+      padding: 7px 8px 7px 8px;
+      font-size: 12px;
+      font-family: Roboto, Arial;
+      bottom: -30px;
+      left: 20px;
+      opacity: 0;
+      border-radius: 1px;
+      border-width: 0.5px;
+      border-style: solid;
+      border-color: rgb(66, 65, 65);
+      pointer-events: none;
+      white-space: nowrap;
+  }
+
+  .profile-pic-container:hover .profile-tooltip{
+      opacity: 1; transition: 0.2s;
+  }
+  
